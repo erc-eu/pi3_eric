@@ -21,7 +21,7 @@ function MenuH() {
                 </div>
             </div>
             <div className={menuOpen ? "menu-vertical open" : "menu-vertical"}>
-               <Content_vertical/>
+                <Content_vertical />
             </div>
             <Content/>
         </div>

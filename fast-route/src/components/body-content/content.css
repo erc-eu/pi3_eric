@@ -1,39 +1,73 @@
-.container{
+.container {
     width: 100%;
-    height: 1024px;
     background-color: green;
     display: flex;
-    margin: 80px auto;
+    margin: 40px auto;
+    flex-wrap: wrap; /* Permite que os itens se ajustem em telas menores */
 }
-.desig{
+
+.desig {
     width: 100%;
-    height: 25%;
+    height: 29%;
     background-color: #ebcf69;
     display: flex;
     justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
 }
-.div-desenho{
-    margin-top: -145px;
-    margin-left: 500px;
-    
+
+.div-desenho {
+    margin-top: -80px;
+    margin-left: 60%; /* Percentual para melhor responsividade */
 }
-.desenho{
-    width: 320px;
-    height: 300px;
+
+.desenho {
+    width: 100%;
+    max-width: 390px;
+    height: auto;
     border-radius: 20%;
 }
-.p-text{
-    width: 300px;
-    margin-left: 70px;
+
+.p-text {
+    max-width: 40%; /* Percentual para melhor responsividade */
+    margin-left: 10%; /* Percentual para melhor responsividade */
     color: #4E4C41;
+    font-size: 20px;
+
 }
-.texto-body{
-    width: 800px;
+
+.texto-body {
+    width: 100%; /* Alterado para permitir melhor responsividade */
     height: auto;
     margin-top: 35px;
 }
-.h1-text{
-    width: 550px;
-    margin-left: 70px;
+
+.h1-text {
+    width: 90%; /* Percentual para melhor responsividade */
+    margin: 0;
+    margin-top: 50px;
+    margin-left: 10%; /* Percentual para melhor responsividade */
     color: #2C444E;
+    font-size: 45px;
+}
+
+@media screen and (max-width: 768px) {
+    .div-desenho {
+      
+        margin: 0 auto;
+    }
+    .h1-text{
+        font-size: 20px;
+    }
+    .p-text{
+        font-size: 15px;
+    }
+    .p-text,
+    .h1-text {
+        max-width: 90%; /* Ajuste para telas menores */
+        margin-left: 5%; /* Ajuste para telas menores */
+    }
+    .desig{
+        height: 30%;
+    }
 }

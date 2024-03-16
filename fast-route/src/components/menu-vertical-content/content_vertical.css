@@ -18,8 +18,23 @@ h3{
     height: 70px;
 }
 .linha{
-    width: 250px;
+    width: 200px;
     height: 2px;
     background-color: black;
     margin: 20px auto;
+}
+
+@media screen and (max-width: 768px) {
+    .img-user{
+        width: 40px;
+        height: 40px;
+        margin-left: 5px;
+    }
+    .linha{
+        width: 140px;
+        margin-left: 10px;
+        height: 2px;
+        background-color: black;
+        
+    }
 }
