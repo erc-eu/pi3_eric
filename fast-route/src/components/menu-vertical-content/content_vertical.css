@@ -1,0 +1,25 @@
+.Container-content-vertical{
+    margin: 100px auto;
+}
+
+.user{
+    display: flex;
+    align-items: center;
+    margin-right: 30px;
+}   
+
+h3{
+    margin: 0px;
+    margin-left: 15px;
+}
+
+.img-user{
+    width: 70px;
+    height: 70px;
+}
+.linha{
+    width: 250px;
+    height: 2px;
+    background-color: black;
+    margin: 20px auto;
+}

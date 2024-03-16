@@ -1,0 +1,71 @@
+.container-menu {
+    display: flex;
+}
+
+.menu-horizontal {
+    width: 100%;
+    height: 80px;
+    background-color: orange;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    margin: 0 auto;
+}
+
+.menu-horizontal-on {
+    width: 100%;
+    height: 80px;
+    background-color: orange;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+}
+
+.menu-icon {
+    width: 60px;
+    height: 55px;
+    margin-left: 10px;
+}
+
+.menu-icon-v {
+    width: 60px;
+    height: 55px;
+    margin-left: 10px;
+    margin-top: 12.5px;
+}
+
+h3 {
+    margin: 0;
+}
+
+.logo {
+    width: 120px;
+    height: 100%;
+}
+
+.logo-contato {
+    width: 300px;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.menu-vertical {
+    width: 0px;
+    height: 1300px;
+    overflow: hidden;
+    display: flex;
+    background-color: gainsboro;
+    transition: width 0.5s ease; 
+}
+
+.menu-vertical.open {
+    width: 350px; 
+}
+
+.conteudo{
+    margin-top: 40px;
+}
