@@ -1,40 +1,134 @@
-.Container-content-vertical{
-    margin: 100px auto;
+.Container-content-vertical {
+    width: 100%;
+    height: auto;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
 }
 
-.user{
+.user {
     display: flex;
     align-items: center;
-    margin-right: 30px;
-}   
-
-h3{
-    margin: 0px;
-    margin-left: 15px;
+    margin: 0 10px;
 }
 
-.img-user{
+h3 {
+    margin: 0px;
+    margin-left: 15px;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+    color: #4E4C41;
+}
+
+.img-user {
     width: 70px;
     height: 70px;
 }
-.linha{
-    width: 200px;
-    height: 2px;
+
+.linha {
+    width: 210px;
+    height: 1px;
     background-color: black;
     margin: 20px auto;
 }
 
+.Container-menu {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.opt {
+    width: auto;
+    padding: 15px;
+    text-decoration: none;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.text {
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+    color: #4E4C41;
+}
+
+.text-perfil {
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+    color: #4E4C41;
+    margin-left: 20px;
+}
+
+.icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+
+.alinhar {
+    display: flex;
+}
+
+.icon-seta {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+    transform: rotate(180deg);
+    transition: 0.3s;
+}
+
+.icon-seta.open {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+    transform: rotate(270deg);
+    transition: transform 0.3s ease;
+}
+
+.busca {
+    opacity: 0;
+    transform: scale(0.5);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.busca.open {
+    opacity: 1;
+    transform: scale(1);
+}
+.onibus {
+    opacity: 0;
+    transform: scale(0.5);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.onibus.open {
+    opacity: 1;
+    transform: scale(1);
+}
+
 @media screen and (max-width: 768px) {
-    .img-user{
+    .img-user {
         width: 40px;
         height: 40px;
         margin-left: 5px;
     }
-    .linha{
+
+    .linha {
         width: 140px;
         margin-left: 10px;
         height: 2px;
         background-color: black;
-        
+
     }
 }

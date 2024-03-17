@@ -7,6 +7,15 @@ import Content_vertical from "../menu-vertical-content/content_vertical";
 function MenuH() {
     const [menuOpen, setMenuOpen] = useState(false);
 
+    const [buscaAtivada, setBuscaAtivada] = useState(0);
+
+    const handleBuscaCallback = (estadoBusca) => {
+        if (estadoBusca == true){
+            setBuscaAtivada(1);
+        }else{
+            setBuscaAtivada(0);
+        }
+    };
     const toggleMenu = () => {
         setMenuOpen(!menuOpen);
     };
@@ -21,9 +30,10 @@ function MenuH() {
                 </div>
             </div>
             <div className={menuOpen ? "menu-vertical open" : "menu-vertical"}>
-                <Content_vertical />
+                <img onClick={toggleMenu} className="menu-icon-v" src={menu_icon} alt="menu-icon" />
+                <Content_vertical onSearch={handleBuscaCallback} />
             </div>
-            <Content/>
+            <Content valor={buscaAtivada} />
         </div>
     )
 }

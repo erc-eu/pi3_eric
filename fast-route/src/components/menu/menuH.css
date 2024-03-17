@@ -2,21 +2,12 @@
     display: flex;
 }
 
-.menu-horizontal {
-    width: 100%;
-    height: 80px;
-    background-color: orange;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    position: absolute;
-    margin: 0 auto;
-}
+
 
 .menu-horizontal-on {
     width: 100%;
     height: 80px;
-    background-color: orange;
+    background-color: white;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -57,15 +48,16 @@ h3 {
     width: 0px;
     height: 1300px;
     overflow: hidden;
-    display: flex;
-    background-color: gainsboro;
-    transition: width 0.5s ease; 
+    display: block;
+    position: relative;
+    background-color: #F2F2F2;
+    transition: width 0.5s ease;
 }
 
 .menu-vertical.open {
-    width: 300px; 
+    width: 300px;
 }
 
-.conteudo{
+.conteudo {
     margin-top: 40px;
 }

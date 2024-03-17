@@ -1,26 +1,29 @@
-import React, { useState } from "react";
-import desenho from '../../assets/desenho.jpeg'
+import React from "react";
+import Home from "./home/home";
+import Buscar from "./buscar/buscar";
 import './content.css'
 
 function Content(props) {
 
-    const [estado, setEstado] = useState(props.valor);
-
-    return (
-        <div className="container">
-            <div className="desig">
-                <div className="texto-body">
-
-                    <h1 className="h1-text">Otimize suas Rotas de Distribuição com Eficiência</h1>
-                    <p className="p-text">Desbloqueie o poder da otimização de rotas para a UFC.
-                        Economize tempo, dinheiro e esforço com nosso software intuitivo.</p>
+    switch (props.valor) {
+        case 0:
+            return (
+                <div className="container">
+                    <Home />
                 </div>
-                    <div className="div-desenho">
-                        <img className="desenho" src={desenho} alt="" />
-                    </div>
-            </div>
-        </div>
-    )
+            )
+            break;
+        case 1:
+            return (
+                <div className="container">
+                    <Buscar/>
+                </div>
+            )
+            break;
+        default:
+            break;
+    }
+
 }
 
 export default Content;
