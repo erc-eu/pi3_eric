@@ -1,6 +1,6 @@
 import React from "react";
 import icon_rotas from '../../../assets/busca_rotas.png'
-import icon_search from '../../../assets/search-icon.png'
+import ButtonBuscar from '../../elements/button-element/button'
 import './buscar.css'
 
 function Buscar() {
@@ -24,13 +24,12 @@ function Buscar() {
                             <input className="input-buscar" />
                         </div>
                     </div>
-                    <div className="submit-buscar">
-                        <div className="container-button-icon">
-                            <img className="icon-search" src={icon_search} alt="icon_buscar" />
-                            <li className="name-buscar">Buscar</li>
-                        </div>
-                    </div>
+                   <ButtonBuscar/>
                 </form>
+
+                <div className="container-mapa">
+
+                </div>
             </div>
         </div>
     )

@@ -15,23 +15,32 @@ function Content_vertical({ onSearch }) {
 
     const toggleBusca = () => {
         setBuscaVisivel(!buscaVisivel);
-        onSearch(!buscaVisivel);
+        setOnibusVisivel(false);
+        onSearch(1);
     };
 
     const toggleOnibus = () => {
         setOnibusVisivel(!onibusVisivel);
+        setBuscaVisivel(false);
+        onSearch(2);
 
     };
+    const toggleHome = () =>{
+        setBuscaVisivel(false);
+        setOnibusVisivel(false);
+        onSearch(0);
+    };
+
     return (
 
         <div className="Container-content-vertical">
-            <div className="user">
-                <img className="img-user" src={foto} alt="user foto" />
+            <div className="user" >
+                <img className="img-user" src={foto} alt="user foto"  />
                 <h3>Nome</h3>
             </div>
             <div className="linha"></div>
             <div className="Container-menu">
-                <div className="opt">
+                <div className="opt" onClick={toggleHome}>
                     <div className="alinhar">
                         <img className="icon" src={home_icon} alt="home-icon" />
                         <li className="text">Home</li>

@@ -1,6 +1,7 @@
 import React from "react";
 import Home from "./home/home";
 import Buscar from "./buscar/buscar";
+import Visualizar from "./visualizar/visualizar";
 import './content.css'
 
 function Content(props) {
@@ -17,6 +18,13 @@ function Content(props) {
             return (
                 <div className="container">
                     <Buscar/>
+                </div>
+            )
+            break;
+        case 2:
+            return(
+                <div className="container">
+                    <Visualizar/>
                 </div>
             )
             break;
