@@ -1,11 +1,11 @@
-.submit-buscar{
+.submit-buscar {
     width: 90%;
     margin: 20px auto;
     display: flex;
     justify-content: right;
 }
 
-.container-button-icon{
+.container-button-icon {
     width: 20%;
     padding: 10px;
     background-color: #FEC808;
@@ -15,7 +15,8 @@
     justify-content: center;
     list-style: none;
 }
-.name-buscar{
+
+.name-buscar {
     color: black;
     font-size: 20px;
     font-family: "Open Sans", sans-serif;
@@ -24,8 +25,25 @@
     font-style: normal;
     font-variation-settings: "wdth" 100;
 }
-.icon-search{
+
+.icon-search {
     width: 25px;
     height: 25px;
     margin-right: 5px;
+}
+
+
+@media screen and (max-width: 768px) {
+    .container-button-icon{
+        width: 20%;
+        padding: 5px;
+    }
+    .icon-search{
+        width: 30px;
+        height: 30px;
+        margin: 0 auto;
+    }
+    .name-buscar{
+        font-size: 0;
+    }
 }

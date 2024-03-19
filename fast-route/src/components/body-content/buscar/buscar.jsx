@@ -1,6 +1,7 @@
 import React from "react";
 import icon_rotas from '../../../assets/busca_rotas.png'
 import ButtonBuscar from '../../elements/button-element/button'
+import localizacaoIcon from '../../../assets/localizacao.png'
 import './buscar.css'
 
 function Buscar() {
@@ -24,11 +25,20 @@ function Buscar() {
                             <input className="input-buscar" />
                         </div>
                     </div>
-                   <ButtonBuscar/>
+                    <ButtonBuscar />
                 </form>
 
                 <div className="container-mapa">
+                    <div className="container-title-mapa">
+                        <img className="icon-localizacao" src={localizacaoIcon} alt="icon_buscar" />
+                        <div className="container-h1">
+                            <h1 className="h1-text-mapa">Melhor rota</h1>
+                            <h1 className="h1-text-mapa">Distância: XX(km)</h1>
+                        </div>
+                    </div>
+                    <div className="mapa">
 
+                    </div>
                 </div>
             </div>
         </div>

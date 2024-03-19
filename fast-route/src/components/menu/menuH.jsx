@@ -3,18 +3,18 @@ import './menuH.css'
 import logo from '../../assets/logo.jpeg'
 import menu_icon from '../../assets/menu-icon.png'
 import Content from "../body-content/content";
-import ContentVertical  from "../menu-vertical-content/content_vertical";
+import ContentVertical from "../menu-vertical-content/content_vertical";
 function MenuH() {
     const [menuOpen, setMenuOpen] = useState(false);
 
     const [buscaAtivada, setBuscaAtivada] = useState(0);
 
     const handleBuscaCallback = (estadoBusca) => {
-        if (estadoBusca === 1){
+        if (estadoBusca === 1) {
             setBuscaAtivada(1);
-        }else if(estadoBusca === 2){
+        } else if (estadoBusca === 2) {
             setBuscaAtivada(2);
-        }else{
+        } else {
             setBuscaAtivada(0);
         }
     };
@@ -32,8 +32,10 @@ function MenuH() {
                 </div>
             </div>
             <div className={menuOpen ? "menu-vertical open" : "menu-vertical"}>
-                <img onClick={toggleMenu} className="menu-icon-v" src={menu_icon} alt="menu-icon" />
-                <ContentVertical  onSearch={handleBuscaCallback} />
+                <div className="v-open-menu">
+                    <img onClick={toggleMenu} className="menu-icon-v" src={menu_icon} alt="menu-icon" />
+                </div>
+                <ContentVertical onSearch={handleBuscaCallback} />
             </div>
             <Content valor={buscaAtivada} />
         </div>

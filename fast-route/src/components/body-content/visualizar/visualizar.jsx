@@ -1,6 +1,7 @@
 import React from "react";
 import icon_onibus from '../../../assets/onibus.png'
 import ButtonBuscar from '../../elements/button-element/button' // Renomeado para ButtonBuscar
+import agendaIcon from '../../../assets/agendaIcon.png'
 import './visualizar.css'
 
 
@@ -18,9 +19,12 @@ function Visualizar() {
                         <input className="input-visualizar" />
                     </div>
                 </div>
-                <ButtonBuscar/> {/* Componente renomeado para ButtonBuscar */}
+                <ButtonBuscar /> {/* Componente renomeado para ButtonBuscar */}
                 <div className="container-resp">
-
+                    <div className="container-title">
+                        <img className="icon-agenda" src={agendaIcon} alt="icon_buscar" />
+                        <h1 className="h1-text-onibus">Ônibus do Campus xxxx</h1>
+                    </div>
                 </div>
             </div>
         </div>

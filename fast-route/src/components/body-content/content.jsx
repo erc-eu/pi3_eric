@@ -2,6 +2,7 @@ import React from "react";
 import Home from "./home/home";
 import Buscar from "./buscar/buscar";
 import Visualizar from "./visualizar/visualizar";
+import AddOnibus from "./adicionar/addOnibus";
 import './content.css'
 
 function Content(props) {
@@ -25,6 +26,13 @@ function Content(props) {
             return(
                 <div className="container">
                     <Visualizar/>
+                </div>
+            )
+            break;
+        case 3:
+            return(
+                <div className="container">
+                    <AddOnibus/>
                 </div>
             )
             break;
