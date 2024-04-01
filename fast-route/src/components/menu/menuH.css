@@ -20,16 +20,7 @@
     margin-left: 10px;
 }
 
-.menu-icon-v {
-    width: 45px;
-    height: 30px;
-    margin-left: 10px;
-}
-.v-open-menu{
-    height: 80px;
-    align-items: center;
-    display: flex;
-}
+
 h3 {
     font-size: 17px;
     margin: 0;
@@ -52,14 +43,17 @@ h3 {
     width: 0px;
     height: 1300px;
     overflow: hidden;
+    margin-top: 80px;
     display: block;
-    position: relative;
+    position: absolute;
     background-color: #F2F2F2;
     transition: width 0.5s ease;
 }
 
 .menu-vertical.open {
-    width: 300px;
+    width: 250px;
+    margin-top: 80px;
+    position: absolute;
 }
 
 .conteudo {

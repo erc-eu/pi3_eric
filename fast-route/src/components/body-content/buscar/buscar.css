@@ -2,22 +2,25 @@
     width: 100%;
     height: auto;
     display: flex;
+    flex-wrap: wrap;
     margin-top: 50px;
-    justify-content:center; 
+    justify-content:center;
   
 }
 
 .container-buscar {
     width: 80%;
     height: auto;
-    flex-direction: column;
 
 }
 .container-mapa{
     width: 100%;
-    height: 60%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
     border: 1px solid black;
     margin: 0 auto;
+    padding-bottom: 25px;
 }
 .label-buscar{
     display: flex;
@@ -102,10 +105,9 @@
 }
 
 
-
 .mapa{
     width: 80%;
-    height: 80%;
+    height: 500px;
     border: 1px solid black;
     margin: 0 auto;
 }
@@ -135,10 +137,5 @@
         width: 27px;
         height: 27px;
     }
-    .container-mapa{
-        height: 40%;
-    }
-    .mapa{
-        height: 50% ;
-    }
+
 }

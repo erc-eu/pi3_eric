@@ -32,9 +32,7 @@ function MenuH() {
                 </div>
             </div>
             <div className={menuOpen ? "menu-vertical open" : "menu-vertical"}>
-                <div className="v-open-menu">
-                    <img onClick={toggleMenu} className="menu-icon-v" src={menu_icon} alt="menu-icon" />
-                </div>
+      
                 <ContentVertical onSearch={handleBuscaCallback} />
             </div>
             <Content valor={buscaAtivada} />
